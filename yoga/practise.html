@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+    <head>
+        <!--tagname style="property:value;"-->
+        <style>
+            .section {
+                position: relative;
+                text-align: center;
+                color: lightskyblue;
+            }
+
+            .navigationbar {
+                overflow: hidden;
+                background-color: #333;
+            }
+
+            .navigationbar a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+                font-family:'Trebuchet MS';
+                font-size: 20px;
+            }
+
+            .navigationbar a.right {
+                float: right;
+            }
+
+            .navigationbar a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            .welcomeTitle {
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 150px;
+                font-family: Verdana;
+            }
+
+            .welcomeTitle2 {
+                position: absolute;
+                top: 53%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 100px;
+                font-family: Verdana;
+                color: lightcoral;
+            }
+
+            h1 {
+                text-align: center;
+                color: lightcoral;
+                font-size: 60px;
+                font-family: Verdana;
+            }
+     
+            h2 {
+                text-align: center;
+                font-size: 19px;
+                border-radius: 10px;
+                border: 3px dotted lightskyblue;
+                padding: 15px;
+                font-family: Verdana;
+                color: lightskyblue;
+            }
+
+            h3 {
+                font-family: Verdana;
+                font-size: 30px;
+                text-align:center;
+            }
+
+            h4 {
+                font-family: Verdana;
+                font-size: 30px;
+                text-align: left;
+            }
+
+            .homeDescription {
+                font-family: Verdana;
+                text-align: center;
+                font-size: 22px;
+            }
+
+            .homeDescription2 {
+                position:relative;
+                border: 5px solid lightskyblue;
+                border-radius: 315px 560px;
+                right: -320px;
+                background-color: lightskyblue;
+                text-align: left;
+            }
+
+            .homeDescription3 {
+                font-size: 15px;
+                font-family: Verdana;
+            }
+
+            .videoSection {
+                position:relative;
+                left: -345px;
+                border:5px solid lightcoral;
+                border-radius: 560px 315px;
+                background-color: lightcoral;
+            }
+
+            img {
+                border-radius: 10px;
+                line-height: 1.5;
+            }
+
+            button{
+                width: 100%;
+                background: lightskyblue;
+                color: white;
+                padding: 15px 32px;
+                border: none;
+                border-radius: 30px 30px;
+                font-size: 25px;
+                box-shadow: 00 15px 20px rgba (0, 0,0, 0.3);
+                cursor: pointer;
+            }
+
+</style>
+    <title>Yoga Website</title>
+</head>
+
+<body>
+    <!--NAVIGATION BAR-->
+<nav class="navigationbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#learn">Learn</a>
+    <a href="https://www.google.com/search?q=yoga+near+me&sxsrf=ALiCzsb5zp4ULep260mYOj5Cvct-8Uxk3w%3A1651796882401&ei=kmt0YrmNGLOFhbIPuI6iwA0&ved=0ahUKEwi5nqrzzsn3AhWzQkEAHTiHCNgQ4dUDCA4&uact=5&oq=yoga+near+me&gs_lcp=Cgdnd3Mtd2l6EAMyCggAELEDEMkDEEMyBQgAEJIDMgUIABCSAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgjELADECc6BwgAEEcQsAM6BAgjECc6BwgAELEDEEM6BAgAEEM6DQgAEIAEEIcCELEDEBQ6BQguEIAEOgoIABCABBCHAhAUSgQIQRgASgQIRhgAUOUCWNgKYIoNaAFwAXgAgAFZiAHsBJIBATiYAQCgAQHIAQrAAQE&sclient=gws-wiz" class="right">🌎</a>
+</nav>
+
+<div class="section">
+    <img class="sectionPhotos" src="photo1.jpg" style="width:100%">
+    <img class="sectionPhotos" src="photo2.jpg" style="width:100%">
+    <img class="sectionPhotos" src="photo4.jpg" style="width:100%">
+    <img class="sectionPhotos" src="photo3.jpg" style="width:100%">
+    <div class="welcomeTitle">Welcome</div>
+    <div class="welcomeTitle2">theYogaBlog</div>
+</div>
+
+<!--Using JavaScript to create a slideshow of the photos-->
+<script>
+    var index= 0;
+    autoChange();
+
+    function autoChange(){
+        var i;
+        var x = document.getElementsByClassName("sectionPhotos");
+        for (i=0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        index++;
+
+        if(index > x.length) {
+            index = 1
+        }
+        x[index-1].style.display = "block";
+        setTimeout(autoChange, 3500);
+        //changes image every 3.5 seconds
+    }
+</script>
+
+<h1> 
+    What is it all about? 🧘
+</h1>
+
+<h2>
+    This page is dedicated to learning all about Yoga, what exactly is it and why you should being doing it and implementing it in your life.
+</h2>
+<section class="homeDescription">
+<p title="About Yoga">
+    Yoga is a group of physical, mental, and spiritual practices or disciplines which originated in ancient India and aim to control and still the mind,
+    recognizing a detached witness-consciousness untouched by the mind and mundane suffering.<br>
+    <pre>
+    The word <mark><b>"yoga"</b></mark> comes from the root word "yuj" which essentially means <u>"to yoke"</u> or <u>"to bind"</u>.
+    The word itself has an underlying theme of being connected. Various styles of yoga combine movement, 
+    physical postures, meditation and breathing techniques or relaxation to promote mental and physical well-being. 
+    </pre>
+    <hr>
+</p>
+
+<h3>
+    Health Benefits
+</h3>
+<section class="homeDescription2">
+    <pre>
+
+    1️⃣ Improves mental health - reduces anxiety 
+    2️⃣ Improves flexibility, balance and strength 
+    3️⃣ Helps with stress relief, boosts your immune system
+    4️⃣ Promotes better posture and body awareness
+    5️⃣ Overall better quality of life and help with burnout
+
+    </pre>
+</section>
+
+<h4>
+    Try doing 10 minutes of Yoga
+</h4>
+<section class="videoSection">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4pKly2JojMw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+<div>
+    <br>
+</div>
+<!--SPACE AND LINE BREAK <pre> tag is used to perserve both spaces and line breaks-->
+<!--SIZING width="104" height="142"-->
+<!--LINE BREAK <p>This is a <br> paragraph with a line break.</p>-->
+<!--HIGHLIGHT <p>Do not forget to buy <mark>milk</mark> today.</p>-->
+<!--DELETE <p>My favorite color is <del>blue</del> red.</p>-->
+<!--UNDERLINE<p>My favorite color is <del>blue</del> <ins>red</ins>.</p>-->
+<!--RENDER ITALIC <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>-->
+<button>
+    <b>Contact Us</b>
+</button>
+<div>
+    <br>
+</div>
+<section class="homeDescription3">
+<strong>
+    Exercise is important! 🌐
+</strong>
+    <a href="https://en.wikipedia.org/wiki/Yoga"> Learn more on Wikipedia </a>
+
+<footer>
+    Coded by Jasmine Yamkum 💻
+    <a href="https://github.com/yamkum236"> Check out my GitHub </a>
+</footer>
+</section>
+
+
+<script>
+    function subscribe() {
+    let name = prompt("What is your name?");
+    prompt("What is your email address?");
+
+    alert("Thanks " + name + ", We'll be in touch!");
+    }
+
+    let button = document.querySelector("button");
+    button.addEventListener("click", subscribe);
+    </script>
+    </body>
+</html>
