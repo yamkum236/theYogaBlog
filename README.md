@@ -1,7 +1,7 @@
 # theYogaBlog 🧘
 I created a fully responsive website to document all my findings and research about Yoga which is a personal interest of mine. This website uses HTML, CSS, Responsive Web Design and JavaScript. 
 
-This was a fun project to take on as I learnt so much about how to build a website from scratch using the programming languages. I will further continue to learn more about them when creating better websites in the future!
+This was a fun project to take on as I learnt so much about how to build a website from scratch using the programming languages. I will further continue to develop my skills and learn more when creating better websites in the future!
 
 ## Final Product
 ### [Home Page]
